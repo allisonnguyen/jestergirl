@@ -129,6 +129,10 @@ iframe {
   display: block;
 }
 
+#sketch-holder {
+  width: 70%;
+}
+
 
 /* ===============================
    MOBILE BREAKPOINT
