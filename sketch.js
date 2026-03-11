@@ -7,8 +7,6 @@ let starY;
 
 let myCircle;
 
-
-
 function setup() {
   let holder = document.getElementById("sketch-holder");
   // holder.offsetWidth reads rendered width of the div
@@ -26,6 +24,7 @@ function draw() {
   system.update();
   pop();
 
+  // show star animation after it has been loaded with a mouse press
   if (showStar) {
     push();
     translate(starX, starY);
@@ -40,12 +39,14 @@ function draw() {
   }
 }
 
+// allow for responsive design
 function windowResized() {
   let holder = document.getElementById("sketch-holder");
   resizeCanvas(holder.offsetWidth, holder.offsetWidth * 0.7);
 }
 
 function mousePressed() {
+  // only allow mouse press animation inside the canvas space in the programming page
   if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) {
 
     myStar = new Star(0, 0, 20, 70, 40, 8, 2);
