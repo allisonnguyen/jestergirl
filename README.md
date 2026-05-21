@@ -1,2 +1,1 @@
-# clowngirl
-mmp 100 website
+The site is live at https://allisonnguyen.github.io/jestergirl/.
